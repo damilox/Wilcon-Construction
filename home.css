@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
   margin: 0;
   padding: 0;
@@ -177,27 +177,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+  width: 100%;
+}
 header{
     font-family: arial, sans-serif;
+    width: 100%;
 }
-
-header .first-header{
+.mis-header{
     background-color: #030918;
+}
+header .first-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
     height: 50px;
-}
-/* .wrap{
-    width: 1224px;
+    width: 1100px;
     margin: 0 auto;
-} */
+}
 .email{
     display: flex;
     align-items: center;
     justify-content:center ;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 .first-header .email a{
     font-size: 17px;
@@ -226,20 +229,19 @@ header .first-header{
     text-transform: uppercase;
     font-family: arial, sans-serif;
     font-weight: bold;
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 .sec-head{
     background-color: white;
     position: relative;
 }
 .second-header{
-    width: 1439px;
+    width: 1100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 66px 0px;
-    /* height: 22vh; */
+    height: 25vh;
 }
 .second-header .wilcon-logo{
     display: flex;
@@ -247,7 +249,7 @@ header .first-header{
 }
 .wilcon-logo p{
     font-size: 40px;
-    padding: 15px 0px;
+    padding: 10px 0px;
     color: white;
     background-color: #fc5e28;
 }
@@ -303,16 +305,17 @@ header .first-header{
 }
 nav{
     background-color: #030918;
-     width: 1297px;
+     width: 1100px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 8px;
     position: absolute;
-    top: 211px;
-    left: 120px;
-    width: 86%;
+    top: 191px;
+    left: 123px;
+    width: 82%;
+    z-index: 2;
 }
 nav ul{
     display: flex;
@@ -349,23 +352,162 @@ nav  .home{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    background-color: rgb(59, 52, 52);
+    background-color:  rgb(68, 77, 80);
     background-blend-mode: overlay;
     font-family: arial, sans-serif;
+    position: relative;
+    top: 10px;
 }
 .wrapper-cont{
-     width: 1297px;
+     width: 1100px;
     margin: 0 auto;
-    padding-top: 170px;
+    padding-top: 160px;
 }
 .hero-section h1{
     color: white;
-    font-size: 90px;
-    width: 50%;
+    font-size: 70px;
+    width: 60%;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+
 }
 .hero-section p{
-    color: rgb(252, 242, 242);
-    font-size: 25px;
+    color: lightgray;
+    font-size: 18px;
     width: 50%;
+    line-height: 1.5rem;
+}
+.hero-btn{
+    margin-top: 25px;
+}
+.service-btn{
+    background-color: #fc5e28;
+    color: white;
+    padding: 14px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+}
+.request-btn{
+    background-color: white;
+    color: rgb(26, 24, 24);
+    font-weight: 100;
+    padding: 14px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+}
+.prioty-container{
+    font-family: arial, sans-serif;
+    position: absolute;
+    top: 122%;
+    right: 0;
+    left: 0;
+}
+.wrapper-prioty{
+    width: 1100px;  
+     margin: 0 auto;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-one{
+     display: flex;
+    justify-content: space-between;
+    background-color: #030918;
+    color: white;
+    height: 43vh;
+}
+.box-two{
+     display: flex;
+    justify-content: space-between;
+    background-color:#fc5e28;
+    color: white;
+    height: 43vh;
+    
+}
+.box-three{
+     display: flex;
+    justify-content: space-between;
+    background-color: #030918;
+    color: white;
+    height: 43vh;
+}
+.box-one h5{
+  font-size: 20px;
+  border-radius:200px;
+  text-align: center;
+  padding-top: 37px;
+  margin-right: 20px;
+  margin-left: 20px;
+
 }
 
+.box-two h5{
+   font-size: 20px;
+  /* background-color:#030918; */
+  /* height: 100px;
+  width: 239px; */
+  border-radius:20px;
+  text-align: center;
+  padding-top: 39px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.box-three h5{
+   font-size: 20px;
+  /* background-color:#030918; */
+  /* height: 100px;
+  width: 239px; */
+  border-radius:20px;
+  text-align: center;
+  padding-top: 39px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.one-text h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 45px;
+    width: 30%;
+}
+.two-text h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 45px;
+    width: 30%;
+}
+.three-text h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 45px;
+}
+.one-text p{
+    font-size: 17px;
+    line-height: 2rem;
+    color: lightgrey;
+    width: 90%;
+}
+.three-text p{
+    font-size: 17px;
+    line-height: 2rem;
+    color: lightgrey;
+    width: 90%;
+}
+.two-text p{
+    font-size: 17px;
+    line-height: 2rem;
+    color: lightgrey;
+    width: 90%;
+}
+.intro-section{
+  height: 100vh;
+}
